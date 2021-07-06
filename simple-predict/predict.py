@@ -29,7 +29,7 @@ out = model(batch_img_tensor)
 #
 # Load the file containing the 1,000 labels for the ImageNet dataset classes
 #
-with open('./imagenet_classes.txt') as f:
+with open('../imagenet_classes.txt') as f:
     labels = [line.strip() for line in f.readlines()]
 #
 # Find the index (tensor) corresponding to the maximum score in the out tensor.
